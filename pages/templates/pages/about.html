@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Car Zone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    /* Sub banner styling */
+    .sub-banner {
+        background: linear-gradient(45deg, #1f4037, #99f2c8);
+        padding: 50px 0;
+        text-align: center;
+        color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .breadcrumb-area h1 {
+        font-size: 2.5em;
+        margin: 0;
+    }
+    
+    .breadcrumbs {
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    .breadcrumbs li {
+        display: inline;
+        font-size: 1em;
+        color: white;
+    }
+    
+    .breadcrumbs li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .breadcrumbs li.active {
+        color: #f2f2f2;
+    }
+    
+    /* About Us Content Styling */
+    .about-content {
+        padding: 50px 0;
+        background-color: #fff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-top: -50px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .about-content h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #1f4037;
+    }
+    
+    .about-content p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    .about-content ul {
+        list-style-type: disc;
+        padding-left: 40px;
+    }
+    
+    .about-content ul li {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    
+    .breadcrumbs li a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        margin-right: 10px;
+        background: linear-gradient(5deg, #1f4037 5%, #38ef7d 100%);
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        text-decoration: none; /* Ensure text decoration is none for links */
+    }
+    
+    .breadcrumbs li a:hover {
+        transform: translateY(-5px);
+    }
+    
+    .breadcrumbs li.active a {
+        background: transparent;
+        color: #f2f2f2; /* Adjust color for the active item */
+        text-decoration: none;
+    }
+    
+    
+</style>
+<body>
+    <!-- Sub banner start -->
+    <div class="sub-banner">
+        <div class="container">
+            <div class="breadcrumb-area">
+                <h1>About Us</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li class="active">
+                        <a href="{% url 'contact' %}" style="
+                            position: relative;
+                            display: inline-block;
+                            padding: 10px 20px;
+                            margin-right: 10px;
+                            background: linear-gradient(5deg, #1f4037 5%, #38ef7d 100%);
+                            border-radius: 10px;
+                            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+                            transition: all 0.3s ease;
+                            text-decoration: none; /* Ensure text decoration is none for links */
+                        ">About Us</a>
+                    </li>
+
+                    <li class="active">
+                        <a href="{% url 'services' %}" style="
+                            position: relative;
+                            display: inline-block;
+                            padding: 10px 20px;
+                            margin-right: 10px;
+                            background: linear-gradient(5deg, #1f4037 5%, #38ef7d 100%);
+                            border-radius: 10px;
+                            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+                            transition: all 0.3s ease;
+                            text-decoration: none; /* Ensure text decoration is none for links */
+                        ">Services</a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Sub banner end -->
+
+<!-- About Us Content Start -->
+<div class="about-content container" style="max-width: 1200px; margin: auto; padding: 20px; font-family: 'Arial', sans-serif;">
+    <h2 style="text-align: center; font-size: 2.5em; color: #333; margin-bottom: 20px;">Welcome to Car Zone</h2>
+    <p style="text-align: center; font-size: 1.2em; color: #555; line-height: 1.6; margin-bottom: 20px;">
+        At Car Zone, we offer the best selection of cars with a focus on quality and customer satisfaction. Our dedicated team is here to help you find the perfect car that fits your needs and budget.
+    </p>
+    <p style="text-align: center; font-size: 1.2em; color: #555; line-height: 1.6; margin-bottom: 20px;">Our services include:</p>
+    <ul style="list-style-type: none; padding: 0; margin-bottom: 20px; font-size: 1.1em; display: flex; flex-direction: column; align-items: center;">
+        <li style="background: linear-gradient(45deg, #6a11cb, #2575fc); padding: 15px 20px; margin: 10px 0; color: #fff; border-radius: 8px; text-align: center; width: 100%; max-width: 500px;">Wide selection of cars</li>
+        <li style="background: linear-gradient(45deg, #6a11cb, #2575fc); padding: 15px 20px; margin: 10px 0; color: #fff; border-radius: 8px; text-align: center; width: 100%; max-width: 500px;">Affordable prices</li>
+        <li style="background: linear-gradient(45deg, #11998e, #38ef7d); padding: 15px 20px; margin: 10px 0; color: #fff; border-radius: 8px; text-align: center; width: 100%; max-width: 500px;">Customer support</li>
+        <li style="background: linear-gradient(45deg, #11998e, #38ef7d); padding: 15px 20px; margin: 10px 0; color: #fff; border-radius: 8px; text-align: center; width: 100%; max-width: 500px;">Easy financing options</li>
+    </ul>
+    <p style="text-align: center; font-size: 1.2em; color: #555; line-height: 1.6;">
+        Come visit us today and drive away in your dream car!
+    </p>
+</div>
+    <!-- About Us Content End -->
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Car Zone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        .contact-details,
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-details h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .contact-details p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .contact-details a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-details a:hover {
+            color: #56ab2f;
+        }
+
+        .contact-form h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form form {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 12px 20px;
+            font-size: 18px;
+            background: linear-gradient(135deg, #56ab2f, #a8e063);
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: linear-gradient(135deg, #a8e063, #56ab2f);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icons {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #56ab2f;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-details h3, .contact-form h3 {
+                font-size: 24px;
+            }
+
+            .contact-form form {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .contact-details p,
+            .contact-details a,
+            .contact-form input,
+            .contact-form textarea,
+            .contact-form button {
+                font-size: 16px;
+            }
+
+            .social-icons a {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contact-container">
+        <h2>Contact Us | <a href="{% url 'home' %}" style="text-decoration: none; color: #333;">Home</a></h2>
+        <p>We would love to hear from you! Reach out to us through any of the following methods.</p>
+
+        <div class="contact-details">
+            <h3>Get in Touch</h3>
+            <p>Email: <a href="mailto:info@carzone.com">info@carzone.com</a></p>
+            <p>Phone: <a href="tel:+91 8009312017">+91 8009312017</a></p>
+            <p>Address: Knowledge Park 3, Greater Noida, 201306</p>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="social-icons">
+            <h3>Follow Us</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
